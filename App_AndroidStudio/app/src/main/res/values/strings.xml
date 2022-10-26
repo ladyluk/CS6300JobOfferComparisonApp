@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <string name="offer_comparison">Offer Comparison</string>
+    <string name="location">Location</string>
+    <string name="title">Title</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="bonus">Bonus</string>
+    <string name="company">Company</string>
+    <string name="salary">Salary</string>
+    <string name="leave_time">Leave Time</string>
+    <string name="shares">Shares</string>
+    <string name="home_buying_fund">Home Fund</string>
+    <string name="wellness_fund">Wellness Fund</string>
+    <string name="exit">Exit</string>
+</resources>

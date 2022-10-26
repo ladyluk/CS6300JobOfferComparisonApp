@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+    <ImageView
+        android:id="@+id/jobIconCurrentJob"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/job_icon"
+        app:tint="#008000" />
+
+    <LinearLayout
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintStart_toEndOf="@id/jobIconCurrentJob"
+        tools:layout_editor_absoluteY="0dp">
+
+      <TextView
+          android:id="@+id/titleCurrent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@tools:sample/lorem[4]" />
+
+      <TextView
+          android:id="@+id/companyCurrent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="@tools:sample/lorem[4]" />
+
+      <TextView
+          android:id="@+id/locationCurrent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="@tools:sample/lorem[2]" />
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

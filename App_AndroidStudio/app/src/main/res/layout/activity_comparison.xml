@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:alwaysDrawnWithCache="false"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/design_default_color_primary"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                            android:id="@+id/offerComparisonTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center_horizontal|center_vertical"
+                            android:text="Offer Comparison"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" tools:ignore="HardcodedText"/>
+
+                    <ImageView
+                            android:id="@+id/homeIconOfferComparison"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="15dp"
+                            app:layout_constraintBottom_toBottomOf="@id/offerComparisonTitle"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/home_icon"
+                            app:tint="@color/white" android:contentDescription="todo" tools:ignore="HardcodedText"/>
+
+                    <ImageView
+                            android:id="@+id/backArrowIconOfferComparison"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintBottom_toBottomOf="@id/offerComparisonTitle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/backarrow_icon"
+                            app:tint="@color/white" android:contentDescription="todo" tools:ignore="HardcodedText"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal">
+
+                    <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                    >
+                        <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Title" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/title1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:text="name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"
+                                    android:autofillHints="" android:hint="title"/>
+
+                            <TextView
+                                    android:id="@+id/title2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:text="name"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp" tools:ignore="HardcodedText"/>
+                        </TableRow>
+
+                        <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Company" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/company1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/company2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Location" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/location1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/location2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Salary" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/salary1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/salary2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Bonus" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/bonus1"
+                                    android:layout_width="144dp"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/bonus2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Leave Time" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/leave1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/leave2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Shares" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/shares1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/shares2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Home Fund" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/homefund1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/homefund2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:padding="10dp"
+                                    android:text="Wellness Fund" tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                    android:id="@+id/wellnessfund1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+
+                            <TextView
+                                    android:id="@+id/wellnessfund2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:padding="10dp"
+                                    android:text="name"
+                                    tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck"/>
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="238dp" app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--                    <Button-->
+<!--                            android:id="@+id/exitOfferComparisonBtn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="exit"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.498" tools:ignore="HardcodedText"/>-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

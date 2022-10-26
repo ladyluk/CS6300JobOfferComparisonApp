@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exitOfferComparisonBtn" type="id"/>
+    <item name="textView2" type="id"/>
+    <item name="company1" type="id"/>
+    <item name="company2" type="id"/>
+    <item name="textView4" type="id"/>
+    <item name="salary1" type="id"/>
+    <item name="salary2" type="id"/>
+    <item name="textView5" type="id"/>
+    <item name="bonus1" type="id"/>
+    <item name="bonus2" type="id"/>
+    <item name="textView6" type="id"/>
+    <item name="leave1" type="id"/>
+    <item name="leave2" type="id"/>
+    <item name="textView7" type="id"/>
+    <item name="shares1" type="id"/>
+    <item name="shares2" type="id"/>
+    <item name="textView8" type="id"/>
+    <item name="homefund1" type="id"/>
+    <item name="homefund2" type="id"/>
+    <item name="textView9" type="id"/>
+    <item name="wellnessfund1" type="id"/>
+    <item name="wellnessfund2" type="id"/>
+    <item name="location2" type="id"/>
+    <item name="location1" type="id"/>
+    <item name="textView3" type="id"/>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".jobOfferList">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="9dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/design_default_color_primary"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/offerComparisonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Job Offers (30)"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/homeIconOfferComparison"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@id/offerComparisonTitle"
+                    app:layout_constraintEnd_toStartOf="@id/addIconJobOfferList"
+                    app:layout_constraintTop_toTopOf="@id/offerComparisonTitle"
+                    app:srcCompat="@drawable/home_icon"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/addIconJobOfferList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/offerComparisonTitle"
+                    app:layout_constraintEnd_toStartOf="@+id/settingsIconJobOfferList"
+                    app:layout_constraintTop_toTopOf="@+id/offerComparisonTitle"
+                    app:srcCompat="@drawable/add_icon"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/settingsIconJobOfferList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/addIconJobOfferList"
+                    app:layout_constraintEnd_toStartOf="@+id/compareIconJobOfferList"
+                    app:srcCompat="@drawable/settings_icon"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/compareIconJobOfferList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="20dp"
+                    app:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/settingsIconJobOfferList"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settingsIconJobOfferList"
+                    app:srcCompat="@drawable/compare_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allOffersRecicler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

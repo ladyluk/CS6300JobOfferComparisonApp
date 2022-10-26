@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/positionLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/design_default_color_primary">
+
+
+                <TextView
+                    android:id="@+id/positionOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/jobIconFullJob"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/job_icon" />
+
+                <TextView
+                    android:id="@+id/titleOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@tools:sample/lorem[4]"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/jobIconFullJob"
+                    app:layout_constraintStart_toEndOf="@+id/jobIconFullJob"
+                    app:layout_constraintTop_toTopOf="@+id/jobIconFullJob" />
+
+                <TextView
+                    android:id="@+id/companyOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="50dp"
+                    android:text="@tools:sample/lorem[4]"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/jobIconFullJob"
+                    app:layout_constraintTop_toBottomOf="@+id/titleOffer" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="102dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Compare"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/editIconJobOfferList"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintEnd_toStartOf="@+id/deleteIconJobOfferList"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/edit_icon" />
+
+                <ImageView
+                    android:id="@+id/deleteIconJobOfferList"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/trash_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
